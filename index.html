@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>作ったツール一覧</title>
+
+  <!-- 好みのGoogle Fontsなどを読み込みたい場合は以下を調整してください -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+  <style>
+    /* 全体設定 */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif; /* 指定したGoogle Font */
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header, nav, main, footer {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    /* ヘッダー部分 */
+    header {
+      text-align: center;
+    }
+    header h1 {
+      margin-top: 0;
+      font-size: 2em;
+      color: #444;
+    }
+
+    /* ナビゲーションメニュー */
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      border-bottom: 1px solid #ddd;
+    }
+    nav li {
+      margin: 0 15px;
+    }
+    nav a {
+      color: #3498db;
+      text-decoration: none;
+      padding-bottom: 10px;
+      font-weight: 500;
+      display: inline-block;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* セクションをカード風に */
+    section {
+      background: #fff;
+      margin: 20px 0;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    section h2 {
+      margin-top: 0;
+      font-size: 1.4em;
+      border-left: 4px solid #3498db;
+      padding-left: 8px;
+    }
+
+    /* リストのスタイル（・を独自に） */
+    ul.tools {
+      list-style-type: none;  
+      padding: 0;
+      margin: 0;
+    }
+    ul.tools li {
+      margin: 15px 0;
+      padding-left: 24px;
+      position: relative;
+    }
+    ul.tools li::before {
+      content: "•";
+      color: #3498db;
+      position: absolute;
+      left: 0;
+    }
+    ul.tools li a {
+      color: #3498db;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    ul.tools li a:hover {
+      text-decoration: underline;
+    }
+
+    /* ツールの説明 */
+    .tool-description {
+      margin-top: 5px;
+      font-size: 0.9em;
+      color: #555;
+      line-height: 1.4;
+    }
+
+    /* フッター */
+    footer {
+      text-align: center;
+      color: #888;
+      margin-bottom: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ヘッダー -->
+  <header>
+    <h1>作ったツール一覧</h1>
+  </header>
+
+  <!-- ナビゲーションメニュー -->
+  <nav>
+    <ul>
+      <li><a href="#tools">ツール一覧</a></li>
+      <li><a href="#about">このサイトについて</a></li>
+      <li><a href="#contact">お問い合わせ</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- ツール一覧セクション -->
+    <section id="tools">
+      <h2>ツール一覧</h2>
+      <ul class="tools">
+        <li>
+          <a href="https://hondasan.github.io/loto/" target="_blank">ロト6 / ロト7 / ミニロト シミュレーター</a>
+          <p class="tool-description">
+            宝くじ（ロト6・ロト7・ミニロト）の抽せんをシミュレーションして結果を試せるツールです。運試しにどうぞ。
+          </p>
+        </li>
+        <li>
+          <a href="https://hondasan.github.io/8192/" target="_blank">1/8192</a>
+          <p class="tool-description">
+            1/8192の確率を当てるゲームです。二択を当て続けられるか
+          </p>
+        </li>
+        <li>
+          <a href="https://hondasan.github.io/risky/" target="_blank">リスキーダイス</a>
+          <p class="tool-description">
+            サイコロを振って得点を競うゲーム。リスクをとりつつハイスコアを目指してください。
+          </p>
+        </li>
+        <li>
+          <a href="https://hondasan.github.io/englishquiz/" target="_blank">TOEIC英単語クイズ</a>
+          <p class="tool-description">
+            TOEICによく出る英単語をクイズ形式で学べます。語彙力アップにぜひお役立てください。
+          </p>
+        </li>
+        <li>
+          <a href="https://hondasan.github.io/ecard/" target="_blank">Eカード</a>
+          <p class="tool-description">
+            漫画で有名な心理戦「Eカード」をウェブ上で体験できます。頭脳戦を楽しみましょう。
+          </p>
+        </li>
+        <li>
+          <a href="https://hondasan.github.io/keizoku/" target="_blank">連続正解継続ゲーム</a>
+          <p class="tool-description">
+            クイズに連続正解していくスリルを味わえるゲームです。高記録を狙って挑戦してみてください。
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- サイト概要セクション -->
+    <section id="about">
+      <h2>このサイトについて</h2>
+      <p>
+        当サイトは管理人のKoHが制作したツール・ゲームを公開している個人サイトです。  
+        簡単なシミュレーションや脳トレ、英語学習ができるコンテンツを随時追加しています。
+      </p>
+      <p>
+        また、本サイトの一部コンテンツやリンク先などから収益を得る場合があります。  
+        サイトに関するご意見・ご要望などございましたら、下記「お問い合わせ」よりご連絡いただけますと幸いです。
+      </p>
+      <p>
+        <!-- 必要に応じて特定商取引法に基づく表記やプライバシーポリシーへのリンクなどを追加 -->
+        <!-- 例: <a href="#legal">特定商取引法に基づく表記</a> / <a href="#privacy">プライバシーポリシー</a> -->
+      </p>
+    </section>
+
+    <!-- お問い合わせセクション -->
+    <section id="contact">
+      <h2>お問い合わせ</h2>
+      <p>
+        ご質問やご連絡などがある場合は、以下のフォームよりご連絡ください。
+      </p>
+      <!-- シンプルにメールリンクを使う例 -->
+      <p>
+        <strong>メールでのお問い合わせ</strong><br>
+        <a href="mailto:hondasan0925@gmail.com">hondasan0925@gmail.com</a>
+      </p>
+
+      <!-- Googleフォームや別ページのコンタクトフォームがある場合はリンクを貼る -->
+      <!--
+      <p>
+        <strong>問い合わせフォーム</strong><br>
+        <a href="https://forms.gle/xxxxx" target="_blank">こちらのフォーム</a>からもお問い合わせいただけます。
+      </p>
+      -->
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 KoH</p>
+  </footer>
+
+</body>
+</html>
